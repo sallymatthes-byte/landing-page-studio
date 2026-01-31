@@ -1,0 +1,1032 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Die 3 Fehler, die dich zur Außenseiterin machen – Kostenloses Webinar für Bonusmamas</title>
+    <meta name="description" content="Kostenloser Live-Workshop für Bonusmamas am 21. Februar 2025. Lerne, wie du von der Außenseiterrolle in die gleichberechtigte Partnerschaft kommst – ohne Drama.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        :root {
+            --black: #000000;
+            --dark-blue: #1E3460;
+            --forest-green: #275417;
+            --beige: #F2EDDC;
+            --warm-white: #FDFBF7;
+            --transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Raleway', sans-serif;
+            background-color: var(--warm-white);
+            color: var(--black);
+            line-height: 1.7;
+            overflow-x: hidden;
+        }
+
+        /* Typography */
+        h1, h2, h3, h4 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+
+        h1 {
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            margin-bottom: 1.5rem;
+        }
+
+        h2 {
+            font-size: clamp(1.75rem, 4vw, 2.75rem);
+            margin-bottom: 1.25rem;
+        }
+
+        h3 {
+            font-size: clamp(1.25rem, 3vw, 1.75rem);
+            margin-bottom: 1rem;
+        }
+
+        p {
+            font-size: clamp(1rem, 2vw, 1.125rem);
+            margin-bottom: 1rem;
+            font-weight: 400;
+        }
+
+        /* Countdown Section */
+        .countdown-section {
+            background: linear-gradient(135deg, var(--dark-blue) 0%, var(--forest-green) 100%);
+            color: white;
+            padding: 2rem 1.5rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .countdown-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(circle at 30% 50%, rgba(255,255,255,0.1) 0%, transparent 50%);
+            pointer-events: none;
+        }
+
+        .countdown-label {
+            font-family: 'Raleway', sans-serif;
+            font-size: clamp(0.875rem, 2vw, 1rem);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 1rem;
+            opacity: 0.9;
+        }
+
+        .countdown-timer {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            position: relative;
+            z-index: 1;
+        }
+
+        .countdown-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-width: 80px;
+        }
+
+        .countdown-number {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2.5rem, 6vw, 4rem);
+            font-weight: 700;
+            line-height: 1;
+            margin-bottom: 0.5rem;
+        }
+
+        .countdown-text {
+            font-size: clamp(0.75rem, 1.5vw, 0.875rem);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            opacity: 0.8;
+        }
+
+        /* Hero Section */
+        .hero-section {
+            background-color: var(--beige);
+            padding: 4rem 1.5rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 50%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent 0%, rgba(39, 84, 23, 0.03) 100%);
+            pointer-events: none;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero-content {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .hero-text {
+            animation: fadeInUp 0.8s ease-out;
+        }
+
+        .hero-badge {
+            display: inline-block;
+            background: var(--dark-blue);
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 50px;
+            font-size: 0.875rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            letter-spacing: 0.5px;
+            animation: fadeIn 0.8s ease-out 0.2s both;
+        }
+
+        .hero-title {
+            animation: fadeInUp 0.8s ease-out 0.3s both;
+        }
+
+        .hero-subtitle {
+            font-size: clamp(1.125rem, 2.5vw, 1.375rem);
+            color: rgba(0, 0, 0, 0.75);
+            margin-bottom: 2rem;
+            line-height: 1.6;
+            animation: fadeInUp 0.8s ease-out 0.4s both;
+        }
+
+        .event-details {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 12px;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+            animation: fadeInUp 0.8s ease-out 0.5s both;
+        }
+
+        .event-details p {
+            margin: 0;
+            font-weight: 600;
+            font-size: 1.125rem;
+        }
+
+        .event-details small {
+            display: block;
+            margin-top: 0.5rem;
+            font-size: 0.875rem;
+            color: rgba(0, 0, 0, 0.6);
+            font-weight: 400;
+        }
+
+        .hero-image {
+            position: relative;
+            animation: fadeIn 0.8s ease-out 0.6s both;
+        }
+
+        .hero-image img {
+            width: 100%;
+            height: auto;
+            border-radius: 16px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+            display: block;
+        }
+
+        /* CTA Button */
+        .cta-button {
+            display: inline-block;
+            background: var(--forest-green);
+            color: white;
+            padding: 1.25rem 3rem;
+            border-radius: 50px;
+            font-size: 1.125rem;
+            font-weight: 700;
+            text-decoration: none;
+            transition: var(--transition);
+            box-shadow: 0 4px 20px rgba(39, 84, 23, 0.3);
+            border: none;
+            cursor: pointer;
+            font-family: 'Raleway', sans-serif;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 30px rgba(39, 84, 23, 0.4);
+            background: #1e4012;
+        }
+
+        /* Problem Section */
+        .problem-section {
+            background: white;
+            padding: 5rem 1.5rem;
+        }
+
+        .section-title {
+            text-align: center;
+            letter-spacing: 1px;
+            margin-bottom: 3rem;
+            position: relative;
+            padding-bottom: 1rem;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background: var(--forest-green);
+        }
+
+        .problem-list {
+            max-width: 800px;
+            margin: 0 auto;
+            display: grid;
+            gap: 1.5rem;
+        }
+
+        .problem-item {
+            display: flex;
+            gap: 1.5rem;
+            align-items: flex-start;
+            padding: 1.5rem;
+            background: var(--beige);
+            border-radius: 12px;
+            transition: var(--transition);
+            opacity: 0;
+            animation: fadeInUp 0.6s ease-out forwards;
+        }
+
+        .problem-item:nth-child(1) { animation-delay: 0.1s; }
+        .problem-item:nth-child(2) { animation-delay: 0.2s; }
+        .problem-item:nth-child(3) { animation-delay: 0.3s; }
+        .problem-item:nth-child(4) { animation-delay: 0.4s; }
+
+        .problem-item:hover {
+            transform: translateX(8px);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+        }
+
+        .problem-icon {
+            color: var(--dark-blue);
+            font-size: 1.5rem;
+            flex-shrink: 0;
+            margin-top: 0.25rem;
+        }
+
+        .problem-text {
+            font-size: 1.125rem;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        /* Fehler Section */
+        .fehler-section {
+            background: var(--beige);
+            padding: 5rem 1.5rem;
+            position: relative;
+        }
+
+        .fehler-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .fehler-card {
+            background: white;
+            padding: 2.5rem 2rem;
+            border-radius: 16px;
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+            transition: var(--transition);
+            opacity: 0;
+            animation: fadeInUp 0.6s ease-out forwards;
+        }
+
+        .fehler-card:nth-child(1) { animation-delay: 0.1s; }
+        .fehler-card:nth-child(2) { animation-delay: 0.2s; }
+        .fehler-card:nth-child(3) { animation-delay: 0.3s; }
+
+        .fehler-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+        }
+
+        .fehler-icon {
+            width: 80px;
+            height: 80px;
+            background: var(--dark-blue);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            margin: 0 auto 1.5rem;
+        }
+
+        .fehler-number {
+            font-family: 'Playfair Display', serif;
+            font-size: 0.875rem;
+            color: var(--forest-green);
+            font-weight: 600;
+            letter-spacing: 1px;
+            margin-bottom: 1rem;
+        }
+
+        .fehler-title {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--black);
+        }
+
+        .fehler-text {
+            color: rgba(0, 0, 0, 0.7);
+            line-height: 1.7;
+        }
+
+        .bonus-badge {
+            background: var(--forest-green);
+            color: white;
+            padding: 1.5rem 2rem;
+            border-radius: 12px;
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto;
+            font-size: 1.125rem;
+            font-weight: 600;
+            line-height: 1.6;
+            box-shadow: 0 4px 20px rgba(39, 84, 23, 0.2);
+        }
+
+        .bonus-badge strong {
+            display: block;
+            font-size: 1.25rem;
+            margin-bottom: 0.5rem;
+            letter-spacing: 1px;
+        }
+
+        /* Transformation Section */
+        .transformation-section {
+            background: white;
+            padding: 5rem 1.5rem;
+        }
+
+        .transformation-list {
+            max-width: 800px;
+            margin: 0 auto;
+            display: grid;
+            gap: 1.5rem;
+        }
+
+        .transformation-item {
+            display: flex;
+            gap: 1.5rem;
+            align-items: flex-start;
+            padding: 1.5rem;
+            border-left: 4px solid var(--forest-green);
+            background: var(--warm-white);
+            border-radius: 8px;
+            transition: var(--transition);
+            opacity: 0;
+            animation: fadeInUp 0.6s ease-out forwards;
+        }
+
+        .transformation-item:nth-child(1) { animation-delay: 0.1s; }
+        .transformation-item:nth-child(2) { animation-delay: 0.2s; }
+        .transformation-item:nth-child(3) { animation-delay: 0.3s; }
+        .transformation-item:nth-child(4) { animation-delay: 0.4s; }
+
+        .transformation-item:hover {
+            transform: translateX(8px);
+            border-left-width: 6px;
+        }
+
+        .transformation-icon {
+            color: var(--forest-green);
+            font-size: 1.75rem;
+            flex-shrink: 0;
+        }
+
+        .transformation-text {
+            font-size: 1.125rem;
+            line-height: 1.6;
+            margin: 0;
+            font-weight: 500;
+        }
+
+        /* About Section */
+        .about-section {
+            background: linear-gradient(135deg, rgba(39, 84, 23, 0.05) 0%, rgba(30, 52, 96, 0.05) 100%);
+            padding: 5rem 1.5rem;
+        }
+
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 3rem;
+            align-items: center;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .about-image {
+            position: relative;
+        }
+
+        .about-image img {
+            width: 100%;
+            height: auto;
+            border-radius: 16px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+        }
+
+        .about-text h2 {
+            margin-bottom: 1.5rem;
+        }
+
+        .about-subtitle {
+            font-size: 1.25rem;
+            color: var(--dark-blue);
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        .about-bio {
+            font-size: 1.125rem;
+            line-height: 1.7;
+            color: rgba(0, 0, 0, 0.75);
+        }
+
+        /* Webinar Details Section */
+        .details-section {
+            background: white;
+            padding: 5rem 1.5rem;
+        }
+
+        .details-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .detail-box {
+            text-align: center;
+            padding: 2rem 1.5rem;
+            background: var(--beige);
+            border-radius: 12px;
+            transition: var(--transition);
+        }
+
+        .detail-box:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .detail-icon {
+            width: 60px;
+            height: 60px;
+            background: var(--dark-blue);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            margin: 0 auto 1rem;
+        }
+
+        .detail-label {
+            font-size: 0.875rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: rgba(0, 0, 0, 0.6);
+            margin-bottom: 0.5rem;
+        }
+
+        .detail-value {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--black);
+        }
+
+        /* Registration Section */
+        .registration-section {
+            background: var(--beige);
+            padding: 5rem 1.5rem;
+            text-align: center;
+        }
+
+        .registration-header {
+            max-width: 700px;
+            margin: 0 auto 3rem;
+        }
+
+        .registration-subtitle {
+            font-size: 1.25rem;
+            color: rgba(0, 0, 0, 0.7);
+            margin-bottom: 2rem;
+        }
+
+        .form-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: white;
+            padding: 3rem 2rem;
+            border-radius: 16px;
+            box-shadow: 0 8px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        /* ActiveCampaign Form Styling */
+        ._form_23 {
+            font-family: 'Raleway', sans-serif !important;
+        }
+
+        ._form-content {
+            margin: 0 auto;
+        }
+
+        ._form-title {
+            font-family: 'Playfair Display', serif !important;
+            font-size: 1.5rem !important;
+            color: var(--black) !important;
+            margin-bottom: 1.5rem !important;
+        }
+
+        ._form_element input[type="text"],
+        ._form_element input[type="email"] {
+            width: 100% !important;
+            padding: 1rem !important;
+            border: 2px solid #e0e0e0 !important;
+            border-radius: 8px !important;
+            font-size: 1rem !important;
+            font-family: 'Raleway', sans-serif !important;
+            transition: var(--transition) !important;
+        }
+
+        ._form_element input:focus {
+            border-color: var(--forest-green) !important;
+            outline: none !important;
+        }
+
+        ._button-wrapper button {
+            background: var(--forest-green) !important;
+            color: white !important;
+            padding: 1.25rem 3rem !important;
+            border-radius: 50px !important;
+            font-size: 1.125rem !important;
+            font-weight: 700 !important;
+            border: none !important;
+            cursor: pointer !important;
+            transition: var(--transition) !important;
+            font-family: 'Raleway', sans-serif !important;
+            width: 100% !important;
+        }
+
+        ._button-wrapper button:hover {
+            background: #1e4012 !important;
+            transform: translateY(-2px) !important;
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--dark-blue);
+            color: white;
+            padding: 3rem 1.5rem 2rem;
+            text-align: center;
+        }
+
+        .footer-links {
+            margin-bottom: 1.5rem;
+        }
+
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+            opacity: 0.8;
+            transition: var(--transition);
+        }
+
+        .footer-links a:hover {
+            opacity: 1;
+            text-decoration: underline;
+        }
+
+        .footer-copyright {
+            font-size: 0.875rem;
+            opacity: 0.7;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsive */
+        @media (min-width: 768px) {
+            .hero-content {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .about-content {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .countdown-item {
+                min-width: 100px;
+            }
+        }
+
+        @media (max-width: 767px) {
+            .countdown-timer {
+                gap: 1rem;
+            }
+
+            .countdown-item {
+                min-width: 70px;
+            }
+
+            .countdown-number {
+                font-size: 2rem;
+            }
+
+            .form-container {
+                padding: 2rem 1.5rem;
+            }
+        }
+
+        /* Scroll animations trigger */
+        .fade-in-section {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+
+        .fade-in-section.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <!-- Countdown Section -->
+    <section class="countdown-section">
+        <div class="container">
+            <div class="countdown-label">Event startet in:</div>
+            <div class="countdown-timer" id="countdown">
+                <div class="countdown-item">
+                    <div class="countdown-number" id="days">00</div>
+                    <div class="countdown-text">Tage</div>
+                </div>
+                <div class="countdown-item">
+                    <div class="countdown-number" id="hours">00</div>
+                    <div class="countdown-text">Stunden</div>
+                </div>
+                <div class="countdown-item">
+                    <div class="countdown-number" id="minutes">00</div>
+                    <div class="countdown-text">Minuten</div>
+                </div>
+                <div class="countdown-item">
+                    <div class="countdown-number" id="seconds">00</div>
+                    <div class="countdown-text">Sekunden</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <span class="hero-badge">Kostenloses Live-Webinar</span>
+                    <h1 class="hero-title">Die 3 Fehler, die dich zur Außenseiterin machen – und der Weg raus</h1>
+                    <p class="hero-subtitle">Kostenloser Live-Workshop für Bonusmamas, die sich endlich als gleichberechtigte Partnerin fühlen wollen – ohne Drama, ohne ständige Konflikte</p>
+
+                    <div class="event-details">
+                        <p><i class="far fa-calendar-alt"></i> Samstag, 21. Februar 2025 | 10:00 Uhr | 90 Minuten Live</p>
+                        <small>Nur LIVE • Aufzeichnung nur für Teilnehmerinnen</small>
+                    </div>
+
+                    <a href="#anmeldung" class="cta-button">Ja, ich sichere mir meinen Platz! 🎯</a>
+                </div>
+
+                <div class="hero-image">
+                    <img src="assets/sally-hero.jpg" alt="Sally Matthes - Patchworkexpertin und Coach für Bonusmamas">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section class="problem-section fade-in-section">
+        <div class="container">
+            <h2 class="section-title">FÜHLST DU DICH WIE EIN GAST IN DEINER EIGENEN FAMILIE?</h2>
+
+            <div class="problem-list">
+                <div class="problem-item">
+                    <i class="fas fa-circle-xmark problem-icon"></i>
+                    <p class="problem-text">Du schluckst Konflikte runter, weil du Angst hast, dass die Beziehung zerbricht</p>
+                </div>
+
+                <div class="problem-item">
+                    <i class="fas fa-circle-xmark problem-icon"></i>
+                    <p class="problem-text">Du übernimmst zu viel Verantwortung, aber fühlst dich trotzdem unsichtbar</p>
+                </div>
+
+                <div class="problem-item">
+                    <i class="fas fa-circle-xmark problem-icon"></i>
+                    <p class="problem-text">Du kannst nicht NEIN sagen – aus Angst, dass alles auseinanderfällt</p>
+                </div>
+
+                <div class="problem-item">
+                    <i class="fas fa-circle-xmark problem-icon"></i>
+                    <p class="problem-text">Du kämpfst gegen die Ex, statt mit deinem Partner zu sprechen</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fehler Section -->
+    <section class="fehler-section fade-in-section">
+        <div class="container">
+            <h2 class="section-title">DIE 3 FEHLER – UND WAS DU STATTDESSEN TUN KANNST</h2>
+
+            <div class="fehler-grid">
+                <div class="fehler-card">
+                    <div class="fehler-icon">
+                        <i class="fas fa-people-arrows"></i>
+                    </div>
+                    <div class="fehler-number">FEHLER #1</div>
+                    <h3 class="fehler-title">Du kämpfst gegen die Ex</h3>
+                    <p class="fehler-text">Warum du gegen die Ex kämpfst, statt mit deinem Partner zu sprechen – und was du stattdessen tun kannst</p>
+                </div>
+
+                <div class="fehler-card">
+                    <div class="fehler-icon">
+                        <i class="fas fa-eye-slash"></i>
+                    </div>
+                    <div class="fehler-number">FEHLER #2</div>
+                    <h3 class="fehler-title">Du willst dazugehören</h3>
+                    <p class="fehler-text">Warum 'dazugehören wollen' dich unsichtbar macht – und wie du sichtbar wirst, ohne dich aufzuopfern</p>
+                </div>
+
+                <div class="fehler-card">
+                    <div class="fehler-icon">
+                        <i class="fas fa-weight-hanging"></i>
+                    </div>
+                    <div class="fehler-number">FEHLER #3</div>
+                    <h3 class="fehler-title">Du schaffst alles alleine</h3>
+                    <p class="fehler-text">Warum du denkst, du musst alles alleine schaffen – und wie du echte Partnerschaft einforderst</p>
+                </div>
+            </div>
+
+            <div class="bonus-badge">
+                <strong>🎁 BONUS</strong>
+                Den ersten konkreten Schritt, um noch diese Woche ein NEIN auszusprechen – ohne Drama
+            </div>
+        </div>
+    </section>
+
+    <!-- Transformation Section -->
+    <section class="transformation-section fade-in-section">
+        <div class="container">
+            <h2 class="section-title">WAS DU NACH DIESEM WEBINAR WEISST</h2>
+
+            <div class="transformation-list">
+                <div class="transformation-item">
+                    <i class="fas fa-circle-check transformation-icon"></i>
+                    <p class="transformation-text">Wie du aufhörst, gegen die Ex zu kämpfen – und stattdessen echte Partnerschaft lebst</p>
+                </div>
+
+                <div class="transformation-item">
+                    <i class="fas fa-circle-check transformation-icon"></i>
+                    <p class="transformation-text">Wie du sichtbar wirst, ohne dich permanent aufzuopfern</p>
+                </div>
+
+                <div class="transformation-item">
+                    <i class="fas fa-circle-check transformation-icon"></i>
+                    <p class="transformation-text">Wie du klare Grenzen setzt – ohne dass deine Beziehung zerbricht</p>
+                </div>
+
+                <div class="transformation-item">
+                    <i class="fas fa-circle-check transformation-icon"></i>
+                    <p class="transformation-text">Den ersten konkreten Schritt für dein erstes entspanntes NEIN – noch diese Woche</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section fade-in-section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="assets/sally-about.jpg" alt="Sally Matthes im Wald">
+                </div>
+
+                <div class="about-text">
+                    <h2>ÜBER SALLY MATTHES</h2>
+                    <p class="about-subtitle">Patchworkexpertin & Coach für Bonusmamas</p>
+                    <p class="about-bio">Sally hilft Bonusmamas, von der Außenseiterrolle in die gleichberechtigte Partnerschaft zu kommen – mit Klarheit, Struktur und ohne Drama.</p>
+                    <p class="about-bio">Mit ihrer empathischen und gleichzeitig klaren Art zeigt sie dir den Weg aus dem ständigen "Nicht-genug-sein" in ein selbstbestimmtes Leben als Bonusmama.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Webinar Details -->
+    <section class="details-section fade-in-section">
+        <div class="container">
+            <h2 class="section-title">DEIN LIVE-WEBINAR</h2>
+
+            <div class="details-grid">
+                <div class="detail-box">
+                    <div class="detail-icon">
+                        <i class="far fa-calendar"></i>
+                    </div>
+                    <div class="detail-label">Datum</div>
+                    <div class="detail-value">Samstag, 21. Februar 2025</div>
+                </div>
+
+                <div class="detail-box">
+                    <div class="detail-icon">
+                        <i class="far fa-clock"></i>
+                    </div>
+                    <div class="detail-label">Uhrzeit</div>
+                    <div class="detail-value">10:00 Uhr</div>
+                </div>
+
+                <div class="detail-box">
+                    <div class="detail-icon">
+                        <i class="fas fa-hourglass-half"></i>
+                    </div>
+                    <div class="detail-label">Dauer</div>
+                    <div class="detail-value">90 Minuten<br><small style="font-size: 0.875rem; font-weight: 400;">(60 Min + 30 Min Q&A)</small></div>
+                </div>
+
+                <div class="detail-box">
+                    <div class="detail-icon">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <div class="detail-label">Plattform</div>
+                    <div class="detail-value">Live via Zoom</div>
+                </div>
+
+                <div class="detail-box">
+                    <div class="detail-icon">
+                        <i class="fas fa-gift"></i>
+                    </div>
+                    <div class="detail-label">Bonus</div>
+                    <div class="detail-value">Aufzeichnung<br><small style="font-size: 0.875rem; font-weight: 400;">für Teilnehmerinnen</small></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Registration Section -->
+    <section class="registration-section fade-in-section" id="anmeldung">
+        <div class="container">
+            <div class="registration-header">
+                <h2>SICHERE DIR JETZT DEINEN PLATZ</h2>
+                <p class="registration-subtitle">Kostenlos • Live • Interaktiv</p>
+            </div>
+
+            <div class="form-container">
+                <div class="_form_23"></div>
+                <script src="https://sallymatthes.activehosted.com/f/embed.php?id=23" charset="utf-8"></script>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-links">
+                <a href="#impressum">Impressum</a>
+                <a href="#datenschutz">Datenschutz</a>
+            </div>
+            <div class="footer-copyright">
+                © 2025 Sally Matthes. Alle Rechte vorbehalten.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Countdown Timer
+        function updateCountdown() {
+            const eventDate = new Date('2025-02-21T10:00:00+01:00').getTime();
+            const now = new Date().getTime();
+            const distance = eventDate - now;
+
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            document.getElementById('days').textContent = String(days).padStart(2, '0');
+            document.getElementById('hours').textContent = String(hours).padStart(2, '0');
+            document.getElementById('minutes').textContent = String(minutes).padStart(2, '0');
+            document.getElementById('seconds').textContent = String(seconds).padStart(2, '0');
+
+            if (distance < 0) {
+                document.getElementById('countdown').innerHTML = '<div class="countdown-item"><div class="countdown-number">Event läuft!</div></div>';
+            }
+        }
+
+        updateCountdown();
+        setInterval(updateCountdown, 1000);
+
+        // Scroll animations
+        const fadeInSections = document.querySelectorAll('.fade-in-section');
+
+        const fadeInObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-visible');
+                }
+            });
+        }, {
+            threshold: 0.1
+        });
+
+        fadeInSections.forEach(section => {
+            fadeInObserver.observe(section);
+        });
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>

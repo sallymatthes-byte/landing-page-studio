@@ -1,5 +1,6 @@
 # Environment variables (contains API keys)
 .env
+.mcp.json
 
 # Vercel
 .vercel/
@@ -15,3 +16,5 @@ Thumbs.db
 .vscode/
 *.swp
 *.swo
+
+.vercel

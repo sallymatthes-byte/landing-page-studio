@@ -17,9 +17,10 @@
     <style>
         :root {
             --black: #000000;
-            --dark-blue: #1E3460;
             --forest-green: #275417;
-            --beige: #F2EDDC;
+            --golden-yellow: #f6c667;
+            --coral: #d88c6f;
+            --sage: #cfdace;
             --warm-white: #FDFBF7;
             --transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
         }
@@ -72,7 +73,7 @@
 
         /* Countdown Section */
         .countdown-section {
-            background: linear-gradient(135deg, var(--dark-blue) 0%, var(--forest-green) 100%);
+            background: linear-gradient(135deg, var(--forest-green) 0%, #1e4012 100%);
             color: white;
             padding: 2rem 1.5rem;
             text-align: center;
@@ -133,7 +134,7 @@
 
         /* Hero Section */
         .hero-section {
-            background-color: var(--beige);
+            background-color: var(--sage);
             padding: 4rem 1.5rem;
             position: relative;
             overflow: hidden;
@@ -170,10 +171,10 @@
 
         .hero-badge {
             display: inline-block;
-            background: var(--dark-blue);
+            background: var(--forest-green);
             color: white;
             padding: 0.75rem 1.5rem;
-            border-radius: 50px;
+            border-radius: 12px;
             font-size: 0.875rem;
             font-weight: 600;
             margin-bottom: 1.5rem;
@@ -232,15 +233,15 @@
         /* CTA Button */
         .cta-button {
             display: inline-block;
-            background: var(--forest-green);
+            background: var(--coral);
             color: white;
             padding: 1.25rem 3rem;
-            border-radius: 50px;
+            border-radius: 12px;
             font-size: 1.125rem;
             font-weight: 700;
             text-decoration: none;
             transition: var(--transition);
-            box-shadow: 0 4px 20px rgba(39, 84, 23, 0.3);
+            box-shadow: 0 4px 20px rgba(216, 140, 111, 0.3);
             border: none;
             cursor: pointer;
             font-family: 'Raleway', sans-serif;
@@ -248,8 +249,8 @@
 
         .cta-button:hover {
             transform: translateY(-2px);
-            box-shadow: 0 6px 30px rgba(39, 84, 23, 0.4);
-            background: #1e4012;
+            box-shadow: 0 6px 30px rgba(216, 140, 111, 0.4);
+            background: #c77a5e;
         }
 
         /* Problem Section */
@@ -289,7 +290,7 @@
             gap: 1.5rem;
             align-items: flex-start;
             padding: 1.5rem;
-            background: var(--beige);
+            background: var(--sage);
             border-radius: 12px;
             transition: var(--transition);
             opacity: 0;
@@ -307,7 +308,7 @@
         }
 
         .problem-icon {
-            color: var(--dark-blue);
+            color: var(--forest-green);
             font-size: 1.5rem;
             flex-shrink: 0;
             margin-top: 0.25rem;
@@ -321,7 +322,7 @@
 
         /* Fehler Section */
         .fehler-section {
-            background: var(--beige);
+            background: var(--sage);
             padding: 5rem 1.5rem;
             position: relative;
         }
@@ -356,7 +357,7 @@
         .fehler-icon {
             width: 80px;
             height: 80px;
-            background: var(--dark-blue);
+            background: var(--forest-green);
             color: white;
             border-radius: 50%;
             display: flex;
@@ -488,7 +489,7 @@
 
         .about-subtitle {
             font-size: 1.25rem;
-            color: var(--dark-blue);
+            color: var(--forest-green);
             font-weight: 600;
             margin-bottom: 1rem;
         }
@@ -507,18 +508,25 @@
 
         .details-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-template-columns: repeat(2, 1fr);
             gap: 2rem;
-            max-width: 900px;
+            max-width: 700px;
             margin: 0 auto;
+        }
+
+        @media (max-width: 768px) {
+            .details-grid {
+                grid-template-columns: 1fr;
+            }
         }
 
         .detail-box {
             text-align: center;
             padding: 2rem 1.5rem;
-            background: var(--beige);
+            background: #f9f9f9;
             border-radius: 12px;
             transition: var(--transition);
+            border: 1px solid #e8e8e8;
         }
 
         .detail-box:hover {
@@ -529,8 +537,8 @@
         .detail-icon {
             width: 60px;
             height: 60px;
-            background: var(--dark-blue);
-            color: white;
+            background: var(--golden-yellow);
+            color: var(--forest-green);
             border-radius: 50%;
             display: flex;
             align-items: center;
@@ -555,7 +563,7 @@
 
         /* Registration Section */
         .registration-section {
-            background: var(--beige);
+            background: var(--warm-white);
             padding: 5rem 1.5rem;
             text-align: center;
         }
@@ -608,15 +616,15 @@
         }
 
         ._form_element input:focus {
-            border-color: var(--forest-green) !important;
+            border-color: var(--coral) !important;
             outline: none !important;
         }
 
         ._button-wrapper button {
-            background: var(--forest-green) !important;
+            background: var(--coral) !important;
             color: white !important;
             padding: 1.25rem 3rem !important;
-            border-radius: 50px !important;
+            border-radius: 12px !important;
             font-size: 1.125rem !important;
             font-weight: 700 !important;
             border: none !important;
@@ -627,13 +635,13 @@
         }
 
         ._button-wrapper button:hover {
-            background: #1e4012 !important;
+            background: #c77a5e !important;
             transform: translateY(-2px) !important;
         }
 
         /* Footer */
         .footer {
-            background: var(--dark-blue);
+            background: var(--forest-green);
             color: white;
             padding: 3rem 1.5rem 2rem;
             text-align: center;
@@ -764,7 +772,7 @@
                     <p class="hero-subtitle">Kostenloser Live-Workshop für Bonusmamas, die sich endlich als gleichberechtigte Partnerin fühlen wollen – ohne Drama, ohne ständige Konflikte</p>
 
                     <div class="event-details">
-                        <p><i class="far fa-calendar-alt"></i> Samstag, 21. Februar 2025 | 10:00 Uhr | 90 Minuten Live</p>
+                        <p><i class="far fa-calendar-alt"></i> Samstag, 21. Februar 2026 | 10:00 Uhr</p>
                         <small>Nur LIVE • Aufzeichnung nur für Teilnehmerinnen</small>
                     </div>
 
@@ -772,7 +780,7 @@
                 </div>
 
                 <div class="hero-image">
-                    <img src="assets/sally-hero.jpg" alt="Sally Matthes - Patchworkexpertin und Coach für Bonusmamas">
+                    <img src="assets/sally-hero-new.jpg" alt="Sally - Patchworkexpertin und Coach für Bonusmamas">
                 </div>
             </div>
         </div>
@@ -877,19 +885,47 @@
         </div>
     </section>
 
+    <!-- Testimonials Section -->
+    <section class="testimonials-section fade-in-section">
+        <div class="container">
+            <h2 class="section-title">WAS BONUSMAMAS SAGEN</h2>
+
+            <div class="testimonials-container" style="max-width: 800px; margin: 0 auto;">
+                <!-- Testimonial 1: Screenshot -->
+                <div class="testimonial-message" style="background: white; padding: 2rem; border-radius: 16px; margin-bottom: 2rem; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);">
+                    <img src="assets/testimonial-1-final.jpg" alt="Bonusmama Feedback" style="max-width: 450px; width: 100%; height: auto; border-radius: 12px; display: block; margin: 0 auto;">
+                </div>
+
+                <!-- Testimonial 2: WhatsApp Screenshot -->
+                <div class="testimonial-message" style="background: white; padding: 2rem; border-radius: 16px; margin-bottom: 2rem; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);">
+                    <img src="assets/testimonial-2.jpg" alt="Bonusmama Feedback" style="max-width: 450px; width: 100%; height: auto; border-radius: 12px; display: block; margin: 0 auto;">
+                </div>
+
+                <!-- Testimonial 3: WhatsApp Screenshot -->
+                <div class="testimonial-message" style="background: white; padding: 2rem; border-radius: 16px; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);">
+                    <img src="assets/testimonial-3.jpg" alt="Bonusmama Feedback" style="max-width: 450px; width: 100%; height: auto; border-radius: 12px; display: block; margin: 0 auto;">
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- About Section -->
     <section class="about-section fade-in-section">
         <div class="container">
             <div class="about-content">
                 <div class="about-image">
-                    <img src="assets/sally-about.jpg" alt="Sally Matthes im Wald">
+                    <img src="assets/sally-about-alt.jpg" alt="Sally">
                 </div>
 
                 <div class="about-text">
-                    <h2>ÜBER SALLY MATTHES</h2>
+                    <h2>ÜBER SALLY</h2>
                     <p class="about-subtitle">Patchworkexpertin & Coach für Bonusmamas</p>
-                    <p class="about-bio">Sally hilft Bonusmamas, von der Außenseiterrolle in die gleichberechtigte Partnerschaft zu kommen – mit Klarheit, Struktur und ohne Drama.</p>
-                    <p class="about-bio">Mit ihrer empathischen und gleichzeitig klaren Art zeigt sie dir den Weg aus dem ständigen "Nicht-genug-sein" in ein selbstbestimmtes Leben als Bonusmama.</p>
+                    <p class="about-bio">Sally begleitet Bonusmamas auf dem Weg von der Außenseiterrolle in die gleichberechtigte Partnerschaft.</p>
+                    <ul class="about-facts">
+                        <li><i class="fas fa-check-circle"></i> Seit 6 Jahren selbst Bonusmama in einer Patchworkfamilie</li>
+                        <li><i class="fas fa-check-circle"></i> Über 700 Podcast-Abonnentinnen</li>
+                        <li><i class="fas fa-check-circle"></i> Bereits über 100 Bonusmamas erfolgreich begleitet</li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -906,7 +942,7 @@
                         <i class="far fa-calendar"></i>
                     </div>
                     <div class="detail-label">Datum</div>
-                    <div class="detail-value">Samstag, 21. Februar 2025</div>
+                    <div class="detail-value">Samstag, 21. Februar 2026</div>
                 </div>
 
                 <div class="detail-box">
@@ -915,14 +951,6 @@
                     </div>
                     <div class="detail-label">Uhrzeit</div>
                     <div class="detail-value">10:00 Uhr</div>
-                </div>
-
-                <div class="detail-box">
-                    <div class="detail-icon">
-                        <i class="fas fa-hourglass-half"></i>
-                    </div>
-                    <div class="detail-label">Dauer</div>
-                    <div class="detail-value">90 Minuten<br><small style="font-size: 0.875rem; font-weight: 400;">(60 Min + 30 Min Q&A)</small></div>
                 </div>
 
                 <div class="detail-box">
@@ -967,7 +995,7 @@
                 <a href="#datenschutz">Datenschutz</a>
             </div>
             <div class="footer-copyright">
-                © 2025 Sally Matthes. Alle Rechte vorbehalten.
+                © 2026 Sally | Patchworkcoaching. Alle Rechte vorbehalten.
             </div>
         </div>
     </footer>
@@ -975,7 +1003,7 @@
     <script>
         // Countdown Timer
         function updateCountdown() {
-            const eventDate = new Date('2025-02-21T10:00:00+01:00').getTime();
+            const eventDate = new Date('2026-02-21T10:00:00+01:00').getTime();
             const now = new Date().getTime();
             const distance = eventDate - now;
 
